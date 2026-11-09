@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+html {
+  scroll-padding-top: 6rem;
+}
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Manrope', system-ui, -apple-system, sans-serif;
+
+  /* Engineered Obsidian Theme Colors */
+  --color-obsidian-950: #070a0e;
+  --color-obsidian-900: #0a0e14;
+  --color-obsidian-850: #0e131b;
+  --color-obsidian-800: #141a24;
+  --color-obsidian-750: #181f2c;
+  --color-obsidian-700: #1e2634;
+  --color-obsidian-600: #2d3748;
+
+  /* Accent & Electric Luminescence */
+  --color-accent-blue: #60a5fa;
+  --color-accent-cyan: #38bdf8;
+  --color-accent-hover: #93c5fd;
+  --color-accent-indigo: #818cf8;
+
+  /* Surface tokens from DESIGN.md */
+  --color-surface: #10141a;
+  --color-surface-dim: #10141a;
+  --color-surface-bright: #353940;
+  --color-surface-container-lowest: #0a0e14;
+  --color-surface-container-low: #181c22;
+  --color-surface-container: #1c2026;
+  --color-surface-container-high: #262a31;
+  --color-surface-container-highest: #31353c;
+  --color-on-surface: #dfe2eb;
+  --color-on-surface-variant: #c1c7d3;
+}
+
+/* Background grid pattern matching design reference */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+}
+
+.glow-radial {
+  background: radial-gradient(circle 600px at 50% 10%, rgba(96, 165, 250, 0.12), transparent 70%);
+}
+
+/* Custom Scrollbar for modern developer feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2634;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2d3748;
+}
